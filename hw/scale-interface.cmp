@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by CvPcb (2013-may-18)-stable date = Thu 03 Jul 2014 01:28:11 PM CEST
+
+BeginCmp
+TimeStamp = /53B2FDE4;
+Reference = C1;
+ValeurCmp = C;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B2FDF3;
+Reference = C2;
+ValeurCmp = C;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B2FEDC;
+Reference = CON1;
+ValeurCmp = AVR-ISP-6;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B53DF0;
+Reference = D1;
+ValeurCmp = DIODE;
+IdModule  = SM1206POL;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B53DE1;
+Reference = D2;
+ValeurCmp = DIODE;
+IdModule  = SM1206POL;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B2F114;
+Reference = IC1;
+ValeurCmp = ATMEGA8-AI;
+IdModule  = TQFP32;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B2FBEE;
+Reference = JP1;
+ValeurCmp = JUMPER;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B2FBD9;
+Reference = P1;
+ValeurCmp = POWER;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B2F4B8;
+Reference = P2;
+ValeurCmp = SCALE;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B2F89E;
+Reference = P3;
+ValeurCmp = FTDI;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B2F5B0;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B2FCCB;
+Reference = X1;
+ValeurCmp = CRYSTAL;
+IdModule  = HC-49V;
+EndCmp
+
+EndListe

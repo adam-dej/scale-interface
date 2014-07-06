@@ -1,0 +1,358 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:scale-interface-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "3 jul 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_2 P2
+U 1 1 53B2F4B8
+P 6400 5900
+F 0 "P2" V 6350 5900 40  0000 C CNN
+F 1 "SCALE" V 6450 5900 40  0000 C CNN
+F 2 "~" H 6400 5900 60  0000 C CNN
+F 3 "~" H 6400 5900 60  0000 C CNN
+	1    6400 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5775 2450 5775 2400
+Wire Wire Line
+	5775 2400 5875 2400
+Wire Wire Line
+	5875 2400 5875 2450
+Wire Wire Line
+	5775 5350 5775 5400
+Wire Wire Line
+	5775 5400 7475 5400
+Wire Wire Line
+	5875 5400 5875 5350
+$Comp
+L R R1
+U 1 1 53B2F5B0
+P 4925 2350
+F 0 "R1" V 5005 2350 40  0000 C CNN
+F 1 "10K" V 4932 2351 40  0000 C CNN
+F 2 "~" V 4855 2350 30  0000 C CNN
+F 3 "~" H 4925 2350 30  0000 C CNN
+	1    4925 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 2600 4925 2750
+Wire Wire Line
+	4925 2100 8350 2100
+Wire Wire Line
+	5825 1825 5825 2400
+Connection ~ 5825 2400
+NoConn ~ 4925 2950
+NoConn ~ 4925 3050
+NoConn ~ 4925 3150
+Wire Wire Line
+	5825 5400 5825 6125
+Wire Wire Line
+	5825 5550 6300 5550
+Connection ~ 5825 5400
+Wire Wire Line
+	6500 5550 7125 5550
+Wire Wire Line
+	7125 5550 7125 2750
+Wire Wire Line
+	7125 2750 6825 2750
+$Comp
+L CONN_6 P3
+U 1 1 53B2F89E
+P 7950 3950
+F 0 "P3" V 7900 3950 60  0000 C CNN
+F 1 "FTDI" V 8000 3950 60  0000 C CNN
+F 2 "~" H 7950 3950 60  0000 C CNN
+F 3 "~" H 7950 3950 60  0000 C CNN
+	1    7950 3950
+	1    0    0    -1  
+$EndComp
+Text Notes 8075 3750 0    60   ~ 0
+GND
+Text Notes 8075 3850 0    60   ~ 0
+CTS
+Text Notes 8075 3950 0    60   ~ 0
+VCC
+Text Notes 8075 4050 0    60   ~ 0
+TXD
+Text Notes 8075 4150 0    60   ~ 0
+RXD
+Text Notes 8075 4250 0    60   ~ 0
+RTS
+Wire Wire Line
+	7600 4000 7325 4000
+Wire Wire Line
+	7325 4000 7325 4450
+Wire Wire Line
+	7325 4450 6825 4450
+Wire Wire Line
+	7600 4100 7375 4100
+Wire Wire Line
+	7375 4100 7375 4350
+Wire Wire Line
+	7375 4350 6825 4350
+Wire Wire Line
+	7600 4200 7600 4750
+Wire Wire Line
+	7600 4750 6825 4750
+Wire Wire Line
+	7600 3900 7200 3900
+Wire Wire Line
+	7200 3900 7200 2100
+Connection ~ 5825 2100
+Wire Wire Line
+	7275 3800 7600 3800
+Wire Wire Line
+	7600 3700 7475 3700
+Wire Wire Line
+	7475 3700 7475 5400
+Connection ~ 5875 5400
+NoConn ~ 6825 2850
+NoConn ~ 6825 2950
+NoConn ~ 6825 3450
+NoConn ~ 6825 3550
+NoConn ~ 6825 3650
+NoConn ~ 6825 3750
+NoConn ~ 6825 3850
+NoConn ~ 6825 3950
+NoConn ~ 6825 4050
+NoConn ~ 6825 4150
+NoConn ~ 6825 4950
+NoConn ~ 6825 5050
+$Comp
+L CONN_2 P1
+U 1 1 53B2FBD9
+P 3875 3725
+F 0 "P1" V 3825 3725 40  0000 C CNN
+F 1 "POWER" V 3925 3725 40  0000 C CNN
+F 2 "~" H 3875 3725 60  0000 C CNN
+F 3 "~" H 3875 3725 60  0000 C CNN
+	1    3875 3725
+	-1   0    0    1   
+$EndComp
+$Comp
+L JUMPER JP1
+U 1 1 53B2FBEE
+P 4225 2125
+F 0 "JP1" H 4225 2275 60  0000 C CNN
+F 1 "JUMPER" H 4225 2045 40  0000 C CNN
+F 2 "~" H 4225 2125 60  0000 C CNN
+F 3 "~" H 4225 2125 60  0000 C CNN
+	1    4225 2125
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4225 3400 4225 3625
+Wire Wire Line
+	4225 3825 4225 5850
+Wire Wire Line
+	4225 5850 5825 5850
+Connection ~ 5825 5550
+$Comp
+L CRYSTAL X1
+U 1 1 53B2FCCB
+P 4675 4000
+F 0 "X1" H 4675 4150 60  0000 C CNN
+F 1 "CRYSTAL" H 4675 3850 60  0000 C CNN
+F 2 "~" H 4675 4000 60  0000 C CNN
+F 3 "~" H 4675 4000 60  0000 C CNN
+	1    4675 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4925 3800 5025 3800
+Wire Wire Line
+	4925 3800 4925 3650
+Wire Wire Line
+	4325 3450 4925 3450
+Wire Wire Line
+	5025 3800 5025 4225
+Wire Wire Line
+	4975 4000 5025 4000
+Connection ~ 5025 4000
+Wire Wire Line
+	4325 3450 4325 4225
+Wire Wire Line
+	4375 4000 4325 4000
+Connection ~ 4325 4000
+$Comp
+L C C1
+U 1 1 53B2FDE4
+P 4525 4525
+F 0 "C1" H 4525 4625 40  0000 L CNN
+F 1 "C" H 4531 4440 40  0000 L CNN
+F 2 "~" H 4563 4375 30  0000 C CNN
+F 3 "~" H 4525 4525 60  0000 C CNN
+	1    4525 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 53B2FDF3
+P 4875 4525
+F 0 "C2" H 4875 4625 40  0000 L CNN
+F 1 "C" H 4881 4440 40  0000 L CNN
+F 2 "~" H 4913 4375 30  0000 C CNN
+F 3 "~" H 4875 4525 60  0000 C CNN
+	1    4875 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 4225 4525 4225
+Wire Wire Line
+	4525 4225 4525 4325
+Wire Wire Line
+	5025 4225 4875 4225
+Wire Wire Line
+	4875 4225 4875 4325
+Wire Wire Line
+	4525 4725 4875 4725
+Wire Wire Line
+	4700 4725 4700 5850
+Connection ~ 4700 5850
+Connection ~ 4700 4725
+$Comp
+L AVR-ISP-6 CON1
+U 1 1 53B2FEDC
+P 8225 2925
+F 0 "CON1" H 8145 3165 50  0000 C CNN
+F 1 "AVR-ISP-6" H 7985 2695 50  0000 L BNN
+F 2 "AVR-ISP-6" V 7705 2965 50  0001 C CNN
+F 3 "~" H 8225 2925 60  0000 C CNN
+	1    8225 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA8-AI IC1
+U 1 1 53B2F114
+P 5825 3750
+F 0 "IC1" H 5075 4950 40  0000 L BNN
+F 1 "ATMEGA8-AI" H 6325 2200 40  0000 L BNN
+F 2 "TQFP32" H 5825 3750 30  0000 C CIN
+F 3 "~" H 5825 3750 60  0000 C CNN
+	1    5825 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2825 7450 2825
+Wire Wire Line
+	7450 2825 7450 3150
+Wire Wire Line
+	7450 3150 6825 3150
+Wire Wire Line
+	8100 2925 7500 2925
+Wire Wire Line
+	7500 2925 7500 3250
+Wire Wire Line
+	7500 3250 6825 3250
+Wire Wire Line
+	8350 2925 8650 2925
+Wire Wire Line
+	8650 2925 8650 2550
+Wire Wire Line
+	8650 2550 7400 2550
+Wire Wire Line
+	7400 2550 7400 3050
+Wire Wire Line
+	7400 3050 6825 3050
+Wire Wire Line
+	8100 3025 7550 3025
+Wire Wire Line
+	7550 3025 7550 2300
+Wire Wire Line
+	7550 2300 5075 2300
+Wire Wire Line
+	5075 2300 5075 2550
+Wire Wire Line
+	5075 2550 5000 2550
+Wire Wire Line
+	5000 2550 5000 2650
+Wire Wire Line
+	5000 2650 4925 2650
+Connection ~ 4925 2650
+Wire Wire Line
+	8350 2100 8350 2825
+Connection ~ 7200 2100
+Wire Wire Line
+	8350 3025 8350 6125
+Wire Wire Line
+	8350 6125 5825 6125
+Connection ~ 5825 5850
+Wire Wire Line
+	7275 3800 7275 4650
+NoConn ~ 6825 4850
+Wire Wire Line
+	7275 4650 6825 4650
+NoConn ~ 6825 4550
+$Comp
+L DIODE D2
+U 1 1 53B53DE1
+P 4225 3200
+F 0 "D2" H 4225 3300 40  0000 C CNN
+F 1 "DIODE" H 4225 3100 40  0000 C CNN
+F 2 "~" H 4225 3200 60  0000 C CNN
+F 3 "~" H 4225 3200 60  0000 C CNN
+	1    4225 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 53B53DF0
+P 4225 2725
+F 0 "D1" H 4225 2825 40  0000 C CNN
+F 1 "DIODE" H 4225 2625 40  0000 C CNN
+F 2 "~" H 4225 2725 60  0000 C CNN
+F 3 "~" H 4225 2725 60  0000 C CNN
+	1    4225 2725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5825 1825 4225 1825
+Wire Wire Line
+	4225 2425 4225 2525
+Wire Wire Line
+	4225 2925 4225 3000
+$EndSCHEMATC
