@@ -48,14 +48,14 @@ ISR(TIMER2_COMP_vect) {
 int main(void) {
 	
 	usart_init();
-	stdout = &usart_out;								// Redirect printf() to usart
+	stdout = &usart_out;                                    // Redirect printf() to usart
 
 	TCCR1B = (1 << CS11) | (1 << CS10) | (1 << ICNC1);	// Set prescaler to 64, activate input capture noise canceler
 
-	TCCR2 = (1 << CS22) | (1 << WGM21);					// Set prescaler to 64 on Timer 2, set Clear Timer on Compare Match
-	OCR2 = 250;											// Output compare every 1 ms with 16MHz / 64 prescaler
+	TCCR2 = (1 << CS22) | (1 << WGM21);                     // Set prescaler to 64 on Timer 2, set Clear Timer on Compare Match
+	OCR2 = 250;                                             // Output compare every 1 ms with 16MHz / 64 prescaler
 
-	TIMSK = (1 << TICIE1) | (1 << OCIE2);				// Enable Input Capture Interrupt for Timer1 and Timer2 Compare Match interrupt
+	TIMSK = (1 << TICIE1) | (1 << OCIE2);                   // Enable Input Capture Interrupt for Timer1 and Timer2 Compare Match interrupt
 
 	sei();
 
@@ -65,9 +65,9 @@ int main(void) {
 	while(1) {
 		cli();
 		delay_local = delay;
-		timestamp_local = timestamp;					// To prevent variables from being modified during a printf operation
+		timestamp_local = timestamp;                    // To prevent variables from being modified during a printf operation
 		sei();
-		uint32_t m = (delay_local * 10000) / 21178; 	// Pulse width of 2.1178 cycles represents ~1 gram
+		uint32_t m = (delay_local * 10000) / 21178;     // Pulse width of 2.1178 cycles represents ~1 gram
 		printf("%lu,%lu\r", timestamp_local, m);
 	}
 
